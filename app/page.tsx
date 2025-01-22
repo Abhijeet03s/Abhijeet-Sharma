@@ -1,14 +1,11 @@
-import Image from "next/image";
-import ProfilePic from "@/app/assets/profile-pic.png";
-
-export default function page() {
+export default function Home() {
   return (
-    <div className="flex justify-center max-w-5xl mx-auto">
-      <div className="flex flex-col justify-start items-center min-h-screen">
-        <Image src={ProfilePic} alt="Profile" width={100} height={100} className="rounded-full" />
-        <h1 className="text-4xl font-bold">Abhijeet Sharma</h1>
-        <p className="text-xl">Frontend Developer and Designer</p>
-      </div>
+    <div className="space-y-6">
+      <p className="text-base font-mono leading-relaxed text-gray-300">
+        Hi, I&apos;m Abhijeet. I&apos;m a Frontend Engineer fascinated by bringing ideas to life on screen.
+        I&apos;ve spent countless hours chasing the perfect shade of blue 🎨, only to tweak it the next day.
+        For me, it&apos;s all about experimenting, iterating, and creating interfaces that make you go, &apos;Whoa!&apos;
+      </p>
     </div>
-  )
+  );
 }
