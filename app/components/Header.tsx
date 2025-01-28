@@ -11,13 +11,13 @@ export default function Header() {
             <Image
                src={ProfilePic}
                alt="Profile"
-               width={100}
-               height={100}
+               width={80}
+               height={80}
                className="rounded-full"
             />
             <div className="space-y-2">
-               <h1 className="text-4xl font-bold">Abhijeet Sharma</h1>
-               <p className="text-xl font-mono text-gray-500">Frontend Engineer & Designer</p>
+               <h1 className="text-xl font-bold">Abhijeet Sharma</h1>
+               <p className="text-base font-mono text-gray-500">Frontend Engineer & Designer</p>
             </div>
          </div>
 
