@@ -15,8 +15,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased bg-background">
-        <div className="flex flex-col min-h-screen max-w-5xl mx-auto px-6 font-mono">
+      <body className="antialiased bg-background font-raleway">
+        <div className="flex flex-col min-h-screen max-w-5xl mx-auto px-4">
           <Header />
           <Navigation />
           <main className="flex-grow">

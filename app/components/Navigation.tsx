@@ -7,7 +7,7 @@ export default function Navigation() {
    const pathname = usePathname();
 
    return (
-      <nav className="flex gap-6 py-8 font-mono">
+      <nav className="flex gap-6 py-8 font-sora">
          <Link
             href="/"
             className={`px-3 py-1.5 rounded-md hover:opacity-90 text-sm ${pathname === '/' ? 'bg-[#1a1a1a] text-white' : 'text-gray-500 hover:text-gray-200'
@@ -21,13 +21,6 @@ export default function Navigation() {
                }`}
          >
             Projects
-         </Link>
-         <Link
-            href="/blogs"
-            className={`px-3 py-1.5 rounded-md hover:opacity-90 text-sm ${pathname === '/blogs' ? 'bg-[#1a1a1a] text-white' : 'text-gray-500 hover:text-gray-200'
-               }`}
-         >
-            Blogs
          </Link>
          <Link
             href="/contact"

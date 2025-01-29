@@ -13,6 +13,10 @@ const config: Config = {
         foreground: "#ffffff",
         secondary: "#1a1a1a",
       },
+      fontFamily: {
+        'raleway': ['Raleway', 'sans-serif'],
+        'sora': ['Sora', 'sans-serif'],
+      },
     },
   },
   plugins: [],

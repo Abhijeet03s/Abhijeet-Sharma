@@ -9,7 +9,7 @@ interface Project {
 const projects: Project[] = [
    {
       title: "Subtracker",
-      description: "A modern subscription management app with analytics and Google Calendar integration for tracking and reminders.",
+      description: "A subscription management app with analytics and Google Calendar integration for tracking and reminders.",
       tech: ["Next.js", "TypeScript", "Google Calendar API"],
       link: "https://sub-tracker.xyz",
       github: "https://github.com/Abhijeet03s/SubTracker",
@@ -34,7 +34,7 @@ export default function ProjectsPage() {
    return (
       <div className="space-y-8">
          <div className="space-y-4">
-            <h1 className="text-xl font-bold">A Peek Into My Tinkering</h1>
+            <h1 className="text-xl font-bold font-sora tracking-wide">A Peek Into My Tinkering</h1>
             <p className="text-gray-400 text-base">
                A showcase of projects I&apos;ve built (completely, I promise!). The ideas though? Let&apos;s just say they were half-baked 🫠. But hey, the effort counts, right?
             </p>
@@ -50,7 +50,7 @@ export default function ProjectsPage() {
 
                   <div className="space-y-4 relative">
                      <div className="space-y-2">
-                        <h2 className="text-lg font-semibold group-hover:text-blue-400 transition-colors">
+                        <h2 className="text-lg font-semibold group-hover:text-blue-400 transition-colors font-sora">
                            {project.title}
                         </h2>
                         <p className="text-gray-400 text-sm leading-relaxed">
@@ -58,7 +58,7 @@ export default function ProjectsPage() {
                         </p>
                      </div>
 
-                     <div className="flex flex-wrap gap-2">
+                     <div className="flex flex-wrap gap-2 font-sora">
                         {project.tech.map((tech, techIndex) => (
                            <span
                               key={techIndex}
@@ -69,7 +69,7 @@ export default function ProjectsPage() {
                         ))}
                      </div>
 
-                     <div className="flex items-center gap-3 pt-4">
+                     <div className="flex items-center gap-3 pt-4 font-sora">
                         <a
                            href={project.link}
                            target="_blank"

@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export default function Header() {
    return (
-      <header className="flex justify-between items-center w-full py-8 border-b border-gray-50/5 mt-6">
+      <header className="flex justify-between items-center w-full py-8 border-b border-gray-50/5 mt-6 font-noto-mongolian">
          <div className="flex items-center gap-6">
             <Image
                src={ProfilePic}
@@ -16,8 +16,8 @@ export default function Header() {
                className="rounded-full"
             />
             <div className="space-y-2">
-               <h1 className="text-xl font-bold">Abhijeet Sharma</h1>
-               <p className="text-base font-mono text-gray-500">Frontend Engineer & Designer</p>
+               <h1 className="text-2xl font-bold font-sora text-foreground tracking-wide">Abhijeet Sharma</h1>
+               <p className="font-medium text-gray-500">Frontend Engineer & Designer</p>
             </div>
          </div>
 
