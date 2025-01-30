@@ -37,7 +37,7 @@ export default function ProjectsPage() {
       <div className="space-y-6 md:space-y-8">
          <div className="space-y-3 md:space-y-4">
             <h1 className="text-lg md:text-xl font-bold font-sora tracking-wide">A Peek Into My Tinkering</h1>
-            <p className="text-gray-400 text-sm md:text-base">
+            <p className="text-gray-300 text-sm md:text-base">
                A showcase of projects I&apos;ve built (completely, I promise!). The ideas though? Let&apos;s just say they were half-baked 🫠. But hey, the effort counts, right?
             </p>
          </div>
@@ -55,7 +55,7 @@ export default function ProjectsPage() {
                         <h2 className="text-lg font-semibold group-hover:text-blue-400 transition-colors font-sora">
                            {project.title}
                         </h2>
-                        <p className="text-gray-400 text-sm leading-relaxed">
+                        <p className="text-gray-300 text-sm leading-relaxed">
                            {project.description}
                         </p>
                      </div>

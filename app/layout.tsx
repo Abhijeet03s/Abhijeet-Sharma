@@ -19,7 +19,7 @@ export default function RootLayout({
         <div className="flex flex-col min-h-screen max-w-5xl mx-auto px-4 md:px-6">
           <Header />
           <Navigation />
-          <main className="flex-grow py-6 md:py-8">
+          <main className="flex-grow pb-6 md:pb-8">
             {children}
           </main>
         </div>

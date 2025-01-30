@@ -25,7 +25,7 @@ const experiences: ExperienceItem[] = [
 export default function Experience() {
    return (
       <section className="space-y-6 md:space-y-8">
-         <h1 className="text-lg md:text-xl font-bold text-white font-sora tracking-wide">Experience</h1>
+         <h2 className="text-lg md:text-xl font-bold text-white font-sora tracking-wide">Experience</h2>
 
          <div className="space-y-6 md:space-y-8 relative">
             <div className="absolute left-[3px] top-[24px] w-[2px] h-[calc(100%-24px)] bg-gray-900" />
@@ -41,16 +41,16 @@ export default function Experience() {
 
                   <div className="space-y-1 flex-grow">
                      <div className="flex items-center gap-3">
-                        <h3 className="text-sm md:text-base text-white font-medium">
+                        <p className="text-sm md:text-base text-white font-medium">
                            {exp.title}
-                        </h3>
+                        </p>
                      </div>
-                     <p className="text-gray-400 text-xs md:text-sm font-medium">
+                     <p className="text-gray-300 text-xs md:text-sm font-medium">
                         {exp.company}
                      </p>
                   </div>
                   {exp.duration && (
-                     <span className="text-gray-600 text-xs md:text-sm">
+                     <span className="text-gray-300 text-xs md:text-sm">
                         {exp.duration}
                      </span>
                   )}
