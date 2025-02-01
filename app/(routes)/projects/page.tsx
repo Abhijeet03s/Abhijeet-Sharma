@@ -1,4 +1,7 @@
+"use client";
+
 import { FaGithub, FaLink } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 interface Project {
    title: string;
@@ -34,7 +37,12 @@ const projects: Project[] = [
 
 export default function ProjectsPage() {
    return (
-      <div className="space-y-6 md:space-y-8">
+      <motion.div
+         className="space-y-6 md:space-y-8"
+         initial={{ opacity: 0, y: 20 }}
+         animate={{ opacity: 1, y: 0 }}
+         transition={{ duration: 0.5 }}
+      >
          <div className="space-y-3 md:space-y-4">
             <h1 className="text-lg md:text-xl font-bold font-sora tracking-wide">A Peek Into My Tinkering</h1>
             <p className="text-gray-300 text-sm md:text-base">
@@ -95,6 +103,6 @@ export default function ProjectsPage() {
                </div>
             ))}
          </div>
-      </div>
+      </motion.div>
    );
 } 

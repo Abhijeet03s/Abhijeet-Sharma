@@ -1,8 +1,16 @@
+"use client";
+
 import Experience from "./components/Experience";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <div className="space-y-8 md:space-y-12">
+    <motion.div
+      className="space-y-8 md:space-y-12"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="space-y-4 md:space-y-6">
         <p className="text-sm md:text-base font-mono leading-relaxed text-gray-300">
           Hey, I&apos;m Abhijeet. I&apos;m a Frontend Engineer fascinated by bringing ideas to life on screen.
@@ -12,6 +20,6 @@ export default function Home() {
         </p>
       </div>
       <Experience />
-    </div>
+    </motion.div>
   );
 }

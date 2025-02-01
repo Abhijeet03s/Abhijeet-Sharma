@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 interface ExperienceItem {
    title: string;
    company: string;
@@ -24,7 +28,12 @@ const experiences: ExperienceItem[] = [
 
 export default function Experience() {
    return (
-      <section className="space-y-6 md:space-y-8">
+      <motion.section
+         className="space-y-6 md:space-y-8"
+         initial={{ opacity: 0, y: 20 }}
+         animate={{ opacity: 1, y: 0 }}
+         transition={{ duration: 0.5 }}
+      >
          <h2 className="text-lg md:text-xl font-bold text-white font-sora tracking-wide">Experience</h2>
 
          <div className="space-y-6 md:space-y-8 relative">
@@ -57,6 +66,6 @@ export default function Experience() {
                </div>
             ))}
          </div>
-      </section>
+      </motion.section>
    );
 } 

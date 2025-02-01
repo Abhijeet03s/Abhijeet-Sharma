@@ -1,12 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import ProfilePic from "@/app/assets/profile.png";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter, FaGithub } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 export default function Header() {
    return (
-      <header className="flex flex-col md:flex-row justify-between items-center w-full py-6 md:py-8 border-b border-gray-50/5 mt-4 md:mt-6 gap-6 md:gap-0">
+      <motion.header
+         className="flex flex-col md:flex-row justify-between items-center w-full py-6 md:py-8 border-b border-gray-50/5 mt-4 md:mt-6 gap-6 md:gap-0"
+         initial={{ opacity: 0, y: -10 }}
+         animate={{ opacity: 1, y: 0 }}
+         transition={{ duration: 0.5 }}
+      >
          <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 text-center md:text-left">
             <Image
                src={ProfilePic}
@@ -41,6 +48,6 @@ export default function Header() {
                <span className="sr-only">X (Twitter)</span>
             </Link>
          </div>
-      </header>
+      </motion.header>
    );
 } 
