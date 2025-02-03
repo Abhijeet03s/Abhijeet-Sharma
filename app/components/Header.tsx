@@ -5,6 +5,7 @@ import Link from "next/link";
 import ProfilePic from "@/app/assets/profile.png";
 import { FaXTwitter, FaGithub } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { SiPeerlist } from "react-icons/si";
 
 export default function Header() {
    return (
@@ -46,6 +47,15 @@ export default function Header() {
             >
                <FaXTwitter aria-hidden="true" />
                <span className="sr-only">X (Twitter)</span>
+            </Link>
+            <Link
+               href="https://peerlist.io/abhijeetsharma"
+               target="_blank"
+               className="hover:opacity-70 text-lg md:text-"
+               aria-label="Follow me on Peerlist"
+            >
+               <SiPeerlist aria-hidden="true" />
+               <span className="sr-only">Peerlist</span>
             </Link>
          </div>
       </motion.header>

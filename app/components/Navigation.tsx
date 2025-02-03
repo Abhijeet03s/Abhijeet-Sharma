@@ -15,7 +15,7 @@ export default function Navigation() {
 
    return (
       <motion.nav
-         className="relative flex gap-4 md:gap-6 py-6 md:py-8 font-sora overflow-x-auto"
+         className="relative flex gap-4 py-6 md:py-8 font-sora overflow-x-auto"
          initial={{ opacity: 0 }}
          animate={{ opacity: 1 }}
          transition={{ duration: 0.5, delay: 0.2 }}
