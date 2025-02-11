@@ -50,7 +50,7 @@ export default function Experience() {
 
                   <div className="space-y-1 flex-grow">
                      <div className="flex items-center gap-3">
-                        <p className="text-sm md:text-base text-white font-medium">
+                        <p className="text-sm md:text-base text-white font-medium font-sora">
                            {exp.title}
                         </p>
                      </div>
