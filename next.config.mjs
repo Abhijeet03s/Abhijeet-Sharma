@@ -40,7 +40,21 @@ const nextConfig = {
                },
                {
                   key: 'Content-Security-Policy',
-                  value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' vercel.live; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src 'self' data: blob: *.githubusercontent.com; font-src 'self' fonts.gstatic.com; connect-src 'self' vitals.vercel-insights.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;"
+                  value: [
+                     "default-src 'self'",
+                     "script-src 'self' 'nonce-RANDOM_NONCE' https://vitals.vercel-insights.com",
+                     "style-src 'self' https://fonts.googleapis.com",
+                     "img-src 'self' data: https://*.githubusercontent.com",
+                     "font-src 'self' https://fonts.gstatic.com",
+                     "connect-src 'self' https://vitals.vercel-insights.com",
+                     "frame-ancestors 'none'",
+                     "base-uri 'self'",
+                     "form-action 'self'",
+                     "upgrade-insecure-requests",
+                     "media-src 'self'",
+                     "object-src 'none'",
+                     "manifest-src 'self'"
+                  ].join('; ')
                }
             ]
          },

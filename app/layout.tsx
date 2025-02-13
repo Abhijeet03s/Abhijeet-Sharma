@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import { Raleway, Sora } from 'next/font/google';
 import Script from 'next/script';
+import { headers } from 'next/headers';
+import crypto from 'crypto';
 
 // Initialize the fonts
 const raleway = Raleway({
@@ -62,6 +64,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Generate a unique nonce for each request
+  const nonce = crypto.randomBytes(16).toString('base64');
+
   return (
     <html lang="en">
       <body className={`antialiased bg-background ${raleway.variable} ${sora.variable} font-raleway`}>
@@ -76,6 +81,7 @@ export default function RootLayout({
         <Script
           src="https://vitals.vercel-insights.com/v1/vitals.js"
           strategy="afterInteractive"
+          nonce={nonce}
         />
 
         <Script
