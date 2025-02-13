@@ -51,7 +51,7 @@ export default function ProjectsPage() {
          transition={{ duration: 0.5 }}
       >
          <div className="space-y-3 md:space-y-4">
-            <h1 className="text-lg md:text-xl font-bold font-sora tracking-wide">A Peek Into My Tinkering</h1>
+            <h2 className="text-lg md:text-xl font-bold font-sora tracking-wide">A Peek Into My Tinkering</h2>
             <p className="text-gray-300 text-sm md:text-base">
                A showcase of projects I&apos;ve built (completely, I promise!). The ideas though? Let&apos;s just say they were half-baked 🫠. But hey, the effort counts, right?
             </p>

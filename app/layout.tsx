@@ -4,8 +4,42 @@ import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 
 export const metadata: Metadata = {
-  title: "Abhijeet Sharma",
-  description: "Personal portfolio website",
+  metadataBase: new URL('https://abhijeetsh.com'),
+  title: {
+    default: 'Abhijeet Sharma | Frontend Engineer',
+    template: '%s | Abhijeet Sharma'
+  },
+  description: "Frontend Engineer specializing in building exceptional digital experiences with modern web technologies",
+  keywords: ['Frontend Engineer', 'Web Developer', 'React Developer', 'Next.js Developer'],
+  authors: [{ name: 'Abhijeet Sharma' }],
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://abhijeetsh.com',
+    title: 'Abhijeet Sharma | Frontend Engineer',
+    description: 'Frontend Engineer specializing in building exceptional digital experiences',
+    siteName: 'Abhijeet Sharma'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Abhijeet Sharma | Frontend Engineer',
+    description: 'Frontend Engineer specializing in building exceptional digital experiences',
+    creator: '@iabhi43'
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  alternates: {
+    canonical: '/',
+  },
 };
 
 export default function RootLayout({
