@@ -3,9 +3,6 @@ import "./globals.css";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import { Raleway, Sora } from 'next/font/google';
-import Script from 'next/script';
-import { headers } from 'next/headers';
-import crypto from 'crypto';
 
 // Initialize the fonts
 const raleway = Raleway({
@@ -64,31 +61,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Generate a unique nonce for each request
-  const nonce = crypto.randomBytes(16).toString('base64');
-
-  // Add nonce to header for CSP
-  const cspHeader = `
-    default-src 'self';
-    script-src 'self' 'nonce-${nonce}' https://vitals.vercel-insights.com;
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-    img-src 'self' data: https://*.githubusercontent.com;
-    font-src 'self' https://fonts.gstatic.com;
-    connect-src 'self' https://vitals.vercel-insights.com;
-    frame-ancestors 'none';
-    base-uri 'self';
-    form-action 'self';
-    upgrade-insecure-requests;
-    media-src 'self';
-    object-src 'none';
-    manifest-src 'self'
-  `.replace(/\s+/g, ' ').trim();
-
   return (
     <html lang="en">
-      <head>
-        <meta httpEquiv="Content-Security-Policy" content={cspHeader} />
-      </head>
       <body className={`antialiased bg-background ${raleway.variable} ${sora.variable} font-raleway`}>
         <div className="flex flex-col min-h-screen max-w-5xl mx-auto px-4 md:px-6">
           <Header />
@@ -97,18 +71,6 @@ export default function RootLayout({
             {children}
           </main>
         </div>
-
-        <Script
-          src="https://vitals.vercel-insights.com/v1/vitals.js"
-          strategy="afterInteractive"
-          nonce={nonce}
-        />
-
-        <Script
-          strategy="worker"
-          src="/scripts/heavy-computation.js"
-          nonce={nonce}
-        />
       </body>
     </html>
   );
