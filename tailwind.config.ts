@@ -14,8 +14,8 @@ const config: Config = {
         secondary: "#1a1a1a",
       },
       fontFamily: {
-        'raleway': ['Raleway', 'sans-serif'],
-        'sora': ['Sora', 'sans-serif'],
+        'raleway': ['var(--font-raleway)'],
+        'sora': ['var(--font-sora)'],
       },
     },
   },

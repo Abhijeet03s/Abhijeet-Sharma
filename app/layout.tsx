@@ -2,6 +2,21 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
+import { Raleway, Sora } from 'next/font/google';
+import Script from 'next/script';
+
+// Initialize the fonts
+const raleway = Raleway({
+  subsets: ['latin'],
+  variable: '--font-raleway',
+  display: 'swap',
+});
+
+const sora = Sora({
+  subsets: ['latin'],
+  variable: '--font-sora',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://abhijeetsh.com'),
@@ -49,7 +64,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased bg-background font-raleway">
+      <body className={`antialiased bg-background ${raleway.variable} ${sora.variable} font-raleway`}>
         <div className="flex flex-col min-h-screen max-w-5xl mx-auto px-4 md:px-6">
           <Header />
           <Navigation />
@@ -57,6 +72,16 @@ export default function RootLayout({
             {children}
           </main>
         </div>
+
+        <Script
+          src="https://vitals.vercel-insights.com/v1/vitals.js"
+          strategy="afterInteractive"
+        />
+
+        <Script
+          strategy="worker"
+          src="/scripts/heavy-computation.js"
+        />
       </body>
     </html>
   );
