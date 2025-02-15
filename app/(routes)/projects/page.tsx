@@ -32,13 +32,6 @@ const projects: Project[] = [
       tech: ["Reactjs", "Tailwind CSS", "Framer Motion", "Firebase"],
       link: "https://light-lens.vercel.app",
       github: "https://github.com/Abhijeet03s/Light-Lens"
-   },
-   {
-      title: "Portfolio",
-      description: "My personal portfolio website showcasing my projects, experience and skills.",
-      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      link: "https://abhijeetsh.com",
-      github: "https://github.com/Abhijeet03s/Abhijeet-Sharma",
    }
 ];
 
