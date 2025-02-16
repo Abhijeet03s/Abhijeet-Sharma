@@ -23,14 +23,14 @@ const projects: Project[] = [
       title: "Pocket Planner",
       description: "PocketPlanner is a user-friendly expense tracking application designed to help individuals take control of their personal finances.",
       tech: ["Next.js", "TanStack Query", "Tailwind CSS"],
-      link: "https://pocket-planner-app.vercel.app",
+      link: "https://pocket-planner.abhijeetsh.com",
       github: "https://github.com/Abhijeet03s/Pocket-Planner",
    },
    {
       title: "Light-Lens",
       description: "A modern e-commerce platform for eyewear featuring a sleek catalog, shopping cart functionality, and secure authentication.",
       tech: ["Reactjs", "Tailwind CSS", "Framer Motion", "Firebase"],
-      link: "https://light-lens.vercel.app",
+      link: "https://light-lens.abhijeetsh.com",
       github: "https://github.com/Abhijeet03s/Light-Lens"
    }
 ];
