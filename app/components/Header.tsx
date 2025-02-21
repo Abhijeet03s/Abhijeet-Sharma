@@ -6,6 +6,7 @@ import ProfilePic from "@/app/assets/profile.png";
 import { FaXTwitter, FaGithub } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { SiPeerlist } from "react-icons/si";
+import { HiLink } from "react-icons/hi";
 
 export default function Header() {
    return (
@@ -25,7 +26,7 @@ export default function Header() {
             />
             <div className="space-y-1 md:space-y-2">
                <h1 className="text-xl md:text-2xl font-bold font-sora text-foreground tracking-wide">Abhijeet Sharma</h1>
-               <p className="text-sm md:text-base font-medium text-gray-300">Frontend Engineer & Designer</p>
+               <p className="text-sm md:text-base font-medium text-gray-300">Frontend Engineer</p>
             </div>
          </div>
 
@@ -35,6 +36,7 @@ export default function Header() {
                target="_blank"
                className="hover:opacity-70 text-lg md:text-xl"
                aria-label="Visit my GitHub profile"
+               title="Visit my GitHub profile"
             >
                <FaGithub aria-hidden="true" />
                <span className="sr-only">GitHub</span>
@@ -43,7 +45,8 @@ export default function Header() {
                href="https://x.com/iabhi43"
                target="_blank"
                className="hover:opacity-70 text-lg md:text-xl"
-               aria-label="Follow me on X (formerly Twitter)"
+               aria-label="X Profile (formerly Twitter)"
+               title="X Profile (formerly Twitter)"
             >
                <FaXTwitter aria-hidden="true" />
                <span className="sr-only">X (Twitter)</span>
@@ -52,10 +55,21 @@ export default function Header() {
                href="https://peerlist.io/abhijeetsharma"
                target="_blank"
                className="hover:opacity-70 text-lg md:text-"
-               aria-label="Follow me on Peerlist"
+               aria-label="Check out my profile on Peerlist"
+               title="Check out my profile on Peerlist"
             >
                <SiPeerlist aria-hidden="true" />
                <span className="sr-only">Peerlist</span>
+            </Link>
+            <Link
+               href="https://abhijeetsh.com/resume"
+               target="_blank"
+               className="hover:opacity-70 text-lg md:text-"
+               aria-label="View my resume"
+               title="View my resume"
+            >
+               <HiLink aria-hidden="true" />
+               <span className="sr-only">Resume</span>
             </Link>
          </div>
       </motion.header>
