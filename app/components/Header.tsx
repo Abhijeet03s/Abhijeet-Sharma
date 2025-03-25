@@ -42,16 +42,6 @@ export default function Header() {
                <span className="sr-only">GitHub</span>
             </Link>
             <Link
-               href="https://x.com/iabhi43"
-               target="_blank"
-               className="hover:opacity-70 text-lg md:text-xl"
-               aria-label="X Profile (formerly Twitter)"
-               title="X Profile (formerly Twitter)"
-            >
-               <FaXTwitter aria-hidden="true" />
-               <span className="sr-only">X (Twitter)</span>
-            </Link>
-            <Link
                href="https://peerlist.io/abhijeetsharma"
                target="_blank"
                className="hover:opacity-70 text-lg md:text-"
@@ -60,6 +50,16 @@ export default function Header() {
             >
                <SiPeerlist aria-hidden="true" />
                <span className="sr-only">Peerlist</span>
+            </Link>
+            <Link
+               href="https://x.com/iabhi43"
+               target="_blank"
+               className="hover:opacity-70 text-lg md:text-xl"
+               aria-label="X Profile (formerly Twitter)"
+               title="X Profile (formerly Twitter)"
+            >
+               <FaXTwitter aria-hidden="true" />
+               <span className="sr-only">X (Twitter)</span>
             </Link>
             <Link
                href="https://abhijeetsh.com/resume"
