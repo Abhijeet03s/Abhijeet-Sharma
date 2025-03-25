@@ -32,13 +32,22 @@ export const metadata: Metadata = {
     url: 'https://abhijeetsh.com',
     title: 'Abhijeet Sharma | Frontend Engineer',
     description: 'Frontend Engineer specializing in building exceptional digital experiences',
-    siteName: 'Abhijeet Sharma'
+    siteName: 'Abhijeet Sharma',
+    images: [
+      {
+        url: '/images/og/Abhijeet-Sharma-ogImage.png',
+        width: 1200,
+        height: 630,
+        alt: 'Abhijeet Sharma - Frontend Engineer',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Abhijeet Sharma | Frontend Engineer',
     description: 'Frontend Engineer specializing in building exceptional digital experiences',
-    creator: '@iabhi43'
+    creator: '@iabhi43',
+    images: ['/images/og/Abhijeet-Sharma-ogImage.png'],
   },
   robots: {
     index: true,
