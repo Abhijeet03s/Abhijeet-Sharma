@@ -32,6 +32,13 @@ const projects: Project[] = [
       tech: ["Reactjs", "Tailwind CSS", "Framer Motion", "Firebase"],
       link: "https://light-lens.abhijeetsh.com",
       github: "https://github.com/Abhijeet03s/Light-Lens"
+   },
+   {
+      title: "Task Manager",
+      description: "A modern, responsive task management application built with the MERN stack.",
+      tech: ["Reactjs", "Expressjs", "Supabase", "Tailwind CSS"],
+      link: "https://task-manager.abhijeetsh.com",
+      github: "https://github.com/Abhijeet03s/MERN-Task-Management-App",
    }
 ];
 
