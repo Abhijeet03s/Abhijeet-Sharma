@@ -20,6 +20,12 @@ const projects: Project[] = [
       github: "https://github.com/Abhijeet03s/SubTracker",
    },
    {
+      title: "BrainBanter",
+      description: "BrainBanter is an AI-powered debate and brainstorming app designed to push the boundaries of your thinking.",
+      tech: ["React Native + Expo", "(TypeScript)", "NativeWind", "Supabase"],
+      github: "https://github.com/Abhijeet03s/BrainBanter",
+   },
+   {
       title: "Pocket Planner",
       description: "PocketPlanner is a user-friendly expense tracking application designed to help individuals take control of their personal finances.",
       tech: ["Next.js", "TanStack Query", "Tailwind CSS"],
