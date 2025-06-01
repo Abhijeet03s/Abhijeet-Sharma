@@ -7,7 +7,7 @@ interface Project {
    title: string;
    description: string;
    tech: string[];
-   link: string;
+   link?: string;
    github: string;
 }
 
@@ -94,16 +94,16 @@ export default function ProjectsPage() {
 
                      <div className="flex items-center gap-3 pt-4 font-sora">
                         {project.link && (
-  <a
-    href={project.link}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-flex items-center gap-2 px-2 py-2 md:px-4 md:py-2 bg-blue-500/10 text-blue-400 rounded-md hover:bg-blue-500/20 transition-colors text-xs md:text-sm"
-  >
-    <FaLink />
-    Live Demo
-  </a>
-)}
+                           <a
+                              href={project.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-2 px-2 py-2 md:px-4 md:py-2 bg-blue-500/10 text-blue-400 rounded-md hover:bg-blue-500/20 transition-colors text-xs md:text-sm"
+                           >
+                              <FaLink />
+                              Live Demo
+                           </a>
+                        )}
                         <a
                            href={project.github}
                            target="_blank"
