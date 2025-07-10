@@ -15,7 +15,7 @@ const experiences: ExperienceItem[] = [
       duration: "Jan 2025 - Present",
    },
    {
-      title: "Web Developer Intern",
+      title: "Web Developer",
       company: "Sustaincred",
       duration: "July 2024 - Dec 2024"
    },
